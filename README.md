@@ -42,12 +42,14 @@ Como Rodar o Projeto
 1.Clone o repositório:
 git clone https://github.com/usuario/urlshortener.git
 
-# Instale as bibliotecas necessárias
-pip install django djangorestframework django-cors-headers
+
 
 2. Crie e ative um ambiente virtual
 python3 -m venv venv
 source venv/bin/activate  # No Windows, use venv\Scripts\activate
+
+# Instale as bibliotecas necessárias
+pip install django djangorestframework django-cors-headers
 
 3. Execute as migrações do banco de dados:
 python manage.py makemigrations
