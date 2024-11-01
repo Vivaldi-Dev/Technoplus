@@ -30,7 +30,7 @@ json
 
 Como Rodar o Projeto
 1. Clone o repositório:
-git clone https://github.com/Vivaldi-Dev/Technoplus ou baixe
+git clone https://github.com/Vivaldi-Dev/Technoplus/tree/main ou baixe
 
 2. Navegue até o diretório do projeto:
 cd randomapi
