@@ -1,62 +1,66 @@
-# Random API
+Visualização Interativa de Dados com Filtros e Tooltips
 
-Uma API REST simples para gerar números aleatórios dentro de um intervalo especificado.
+Este projeto fornece um painel interativo de visualização de dados construído com Next.js, TypeScript e Chart.js. Principais características:
 
-## Funcionalidades
+- Gráficos de barras dinâmicos com filtros
+- Tooltips interativos que exibem informações detalhadas
+- Design responsivo para todos os tamanhos de tela
+- Arquitetura React moderna com TypeScript
 
-- Gera um número aleatório entre um valor mínimo e um valor máximo.
-- Permite especificar os valores `min` e `max` através de parâmetros de consulta.
+ Funcionalidades
 
-## Endpoints
-
-### 1. Gerar Número Aleatório
-
-**Endpoint:** `/random`  
-**Método:** `GET`  
-**Parâmetros de Consulta:**
-- `min` (inteiro): O valor mínimo do intervalo (inclusivo).
-- `max` (inteiro): O valor máximo do intervalo (inclusivo).
-
-**Exemplo de Uso:**
-```bash
-GET /random?min=1&max=10
-
-Exemplo de Resposta:
-
-json
-{
-  "randomNumber": 7
-}
-
-Como Rodar o Projeto
-1. Clone o repositório:
-git clone https://github.com/Vivaldi-Dev/Technoplus/tree/main ou baixe
-
-
-
-2. Navegue até o diretório do projeto:
-cd randomapi
-
-3.Crie um ambiente virtual e ative-o:
-python3 -m venv venv
-source venv/bin/activate  # No Windows, use venv\Scripts\activate
-
-# Instale as bibliotecas necessárias
-pip install django djangorestframework django-cors-headers
-
-5. Execute as migrações do banco de dados:
-python manage.py makemigrations 
-python manage.py migrate
-
-6.Inicie o servidor:
-python manage.py runserver
-
-7.Acesse a API em http://127.0.0.1:8000/random?min=1&max=10.
+- **Filtragem de dados**: Filtre conjuntos de dados por categoria
+- **Tooltips interativos**: Passe o mouse sobre as barras para ver detalhes
+- **Design responsivo**: Funciona em desktop e dispositivos móveis
+- **Tipagem segura**: Desenvolvido com TypeScript
+- **Hooks customizados**: Gerenciamento eficiente de dados e estado
 
 Tecnologias Utilizadas
-Python
-Django
-Django REST Framework
 
+- **Frontend**: Next.js 15
+- **Visualização de dados**: Chart.js 4, react-chartjs-2
+- **Estilização**: Tailwind CSS
+- **Tipagem**: TypeScript 5
+- **API**: Next.js API Routes
+
+Como Executar
+
+### Pré-requisitos
+- Node.js (versão 18 ou superior)
+- npm ou yarn
+- Git
+
+### Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/interactive-data-viz.git
+cd interactive-data-viz
+```
+
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+4. Acesse [http://localhost:3000](http://localhost:3000) no seu navegador
+
+## 💡 Componentes Principais
+
+### `BarChart.tsx`
+O componente principal que:
+- Busca dados da API
+- Renderiza gráficos de barras interativos
+- Gerencia filtros e tooltips
+- Controla o comportamento responsivo
 
 
