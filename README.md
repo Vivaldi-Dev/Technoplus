@@ -34,7 +34,7 @@ Como Executar
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/interactive-data-viz.git
+git clone --branch feat/data-viz --single-branch https://github.com/Vivaldi-Dev/Technoplus/.git
 cd interactive-data-viz
 ```
 
